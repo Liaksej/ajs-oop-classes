@@ -72,11 +72,3 @@ export class Zombie extends Character {
     this.defence = defence;
   }
 }
-
-// const bowerman = new Bowman("Bowman", "Bowman");
-// const swordsman = new Swordsman("Swordsman", "Swordsman");
-// const magician = new Magician("Magician", "Magician");
-// const daemon = new Daemon("Daemon", "Daemon");
-// const undead = new Undead("Undead", "Undead");
-// const zombie = new Zombie("Zombie", "Zombie");
-// console.log(new Bowman("Bowman", "Bowman"));
