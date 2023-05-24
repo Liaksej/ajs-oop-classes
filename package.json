@@ -2,7 +2,7 @@
   "name": "classes",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/classes.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest --coverage ",
     "lint": "eslint .",

@@ -1,31 +1,9 @@
-import {
-  Bowman,
-  Daemon,
-  Magician,
-  Swordsman,
-  Undead,
-  Zombie,
-} from "../classes.js";
-
-test.each([
-  [
-    "invalid name input: less then 2",
-    ["B", "Bowman", 100, 1, 10, 10],
-    "The name must be at least 2 and no more than 10 characters",
-  ],
-  [
-    "invalid name input: more then 10",
-    ["B", "Bowman", 100, 1, 10, 10],
-    "The name must be at least 2 and no more than 10 characters",
-  ],
-  [
-    "invalid type input: not in the list: Bowman, Swordsman, Magician, Daemon, Undead, Zombie",
-    ["Bowman", "Lulu", 100, 1, 10, 10],
-    "The type must be one of the list: Bowman, Swordsman, Magician, Daemon, Undead, Zombie",
-  ],
-])("testing working status with %s", (_, imported, expected) => {
-  expect(() => new Bowman(...imported)).toThrow(expected);
-});
+import { Zombie } from "../zombie.js";
+import { Bowman } from "../bowman.js";
+import { Swordsman } from "../swordsman.js";
+import { Magician } from "../magician.js";
+import { Daemon } from "../daemon.js";
+import { Undead } from "../undead.js";
 
 test.each([
   [
