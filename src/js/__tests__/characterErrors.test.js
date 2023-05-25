@@ -1,14 +1,14 @@
-import { Character } from "../character";
+import { Bowman } from "../bowman";
 
 test.each([
   [
     "invalid name input: less then 2",
-    ["B", "Bowman", 100, 1, 10, 10],
+    ["B", "Bowman", 10, 10],
     "The name must be at least 2 and no more than 10 characters",
   ],
   [
     "invalid name input: more then 10",
-    ["B", "Bowman", 100, 1, 10, 10],
+    ["BowmanBowman", "Bowman", 10, 10],
     "The name must be at least 2 and no more than 10 characters",
   ],
   [
@@ -17,5 +17,5 @@ test.each([
     "The type must be one of the list: Bowman, Swordsman, Magician, Daemon, Undead, Zombie",
   ],
 ])("testing working status with %s", (_, imported, expected) => {
-  expect(() => new Character(...imported)).toThrow(expected);
+  expect(() => new Bowman(...imported)).toThrow(expected);
 });
